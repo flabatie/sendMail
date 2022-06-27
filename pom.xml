@@ -109,7 +109,7 @@
 							<goal>copy-dependencies</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>${project.build.directory}/codeOTP/lib</outputDirectory>
+							<outputDirectory>${project.build.directory}/sendMail/lib</outputDirectory>
 							<overWriteReleases>false</overWriteReleases>
 							<overWriteSnapshots>false</overWriteSnapshots>
 							<overWriteIfNewer>true</overWriteIfNewer>
