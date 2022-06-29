@@ -85,12 +85,12 @@ public class SendAnEmail {
      // Get a Properties object
         Properties props = System.getProperties();
 		
-	  props.setProperty("proxySet","true");
-	  //props.setProperty("socksProxyHost","10.0.49.163");
-	  //props.setProperty("socksProxyPort","3128");
-	  props.setProperty("mail.smtp.proxy.port","3128"); // ok sur vm windows & poste si samu 
-	  props.setProperty("mail.smtp.proxy.host","10.0.49.163"); // ok  sur vm windows
-		         
+	    props.setProperty("proxySet","true");
+	    //props.setProperty("socksProxyHost","10.0.49.163");
+	    //props.setProperty("socksProxyPort","3128");
+	    props.setProperty("mail.smtp.proxy.port","3128"); // ok sur vm windows & poste si samu 
+	    //props.setProperty("mail.smtp.proxy.host","10.0.49.163"); // ok  sur vm windows
+	    props.setProperty("mail.smtp.proxy.host","10.43.49.200");       // poste si samu 
         props.setProperty("mail.smtp.host", "smtp.office365.com");
         props.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
         props.setProperty("mail.smtp.socketFactory.fallback", "false");
